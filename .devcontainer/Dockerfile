@@ -161,3 +161,14 @@ RUN set -eux; \
     URL=https://public-installer-pkg.s3.us-east-2.amazonaws.com/$PACKAGE; \
     wget $URL; \
     tar -xvzf $PACKAGE;
+
+RUN set -eux; \
+    echo "Installing Traffic Server additional tools ..."; \
+    # https://cwiki.apache.org/confluence/display/TS/Profiling
+    export DEBIAN_FRONTEND=noninteractive; \
+    apt-get -y install --no-install-recommends \
+    oprofile \
+    valgrind \
+    kcachegrind \
+    doxygen \
+    ;
