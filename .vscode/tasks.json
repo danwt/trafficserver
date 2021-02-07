@@ -30,7 +30,7 @@
         {
             "label": "Install",
             "type": "shell",
-            "command": "make -j 16 install -C ${workspaceFolder}/${env:ATS_VSCODE_BUILDDIR}",
+            "command": "make -j 13 install -C ${workspaceFolder}/${env:ATS_VSCODE_BUILDDIR}",
             "problemMatcher": [
                 "$gcc"
             ],

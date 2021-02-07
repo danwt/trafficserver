@@ -17,16 +17,18 @@ RUN set -eux; \
     apt-get update; \
     export DEBIAN_FRONTEND=noninteractive; \
     apt-get -y install --no-install-recommends \
-    pkgconfig \
+    pkg-config \
     libtool \
     openssl \
-    pcre \
-    libcap \
+    libssl-dev \
+    libpcre3 \
+    libpcre3-dev \
+    libcap-dev \
     flex \
     hwloc \
-    lua \
-    zlib \
-    curses \
+    liblua5.3-dev \
+    zlib1g-dev \
+    libncurses5-dev \
     git \
     autoconf \
     automake \
@@ -118,6 +120,7 @@ RUN set -eux; \
     libboost-thread-dev \
     libboost-test-dev \
     python3-pygments \
+    python3-distutils \
     libsqlite3-dev \
     libtbb-dev \
     libz-dev \
