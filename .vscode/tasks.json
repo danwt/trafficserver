@@ -18,7 +18,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "make -j 16 -C ${workspaceFolder}/${env:ATS_VSCODE_BUILDDIR}",
+            "command": "make -j 13 -C ${workspaceFolder}/${env:ATS_VSCODE_BUILDDIR}",
             "problemMatcher": [
                 "$gcc"
             ],
@@ -38,7 +38,7 @@
         {
             "label": "Test",
             "type": "shell",
-            "command": "make -j 8 test -C ${workspaceFolder}/${env:ATS_VSCODE_BUILDDIR}",
+            "command": "make -j 6 test -C ${workspaceFolder}/${env:ATS_VSCODE_BUILDDIR}",
             "problemMatcher": [
                 "$gcc"
             ],
