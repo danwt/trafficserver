@@ -17,19 +17,19 @@ RUN set -eux; \
     apt-get update; \
     export DEBIAN_FRONTEND=noninteractive; \
     apt-get -y install --no-install-recommends \
-    pkgconfig
-    libtool
-    openssl
-    pcre
-    libcap
-    flex
-    hwloc
-    lua
-    zlib
-    curses
-    git
-    autoconf
-    automake
+    pkgconfig \
+    libtool \
+    openssl \
+    pcre \
+    libcap \
+    flex \
+    hwloc \
+    lua \
+    zlib \
+    curses \
+    git \
+    autoconf \
+    automake \
     ;
 
 RUN set -eux; \
